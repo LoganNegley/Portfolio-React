@@ -33,11 +33,12 @@ const HeroContainer= styled.div`
     }
 
     .bottom{
-        width:85%;
+        width:90%;
         text-align:center;
         margin:0 auto;
         font-size:3rem;
         color:white;
+        line-height:4rem;
         span{
              font-weight:bold;
         }
