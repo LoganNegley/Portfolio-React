@@ -5,24 +5,25 @@ const NavLinks = styled.div`
     color:white;
     background-color:#04808E;
     font-size:1.5rem;
-    width:25%;
+    width:35%;
     position:absolute;
     right:0px;
     top:0px;
-    height:200px;
+    height:250px;
     border-radius:75px 0 75px 0;
+    z-index:110;
 
     #exit{
         position:absolute;
         right:10px;
-        top:5px;
+        top:10px;
 
     }
     ul{
         position:absolute;
-        right:5px;
-        top:25px;
-        font-size:1.75rem;
+        right:25px;
+        top:35px;
+        font-size:2rem;
         }
     li{
         padding:.5rem;
