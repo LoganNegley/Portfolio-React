@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const Section = styled.section`
     width:90%;
-    margin:-10rem auto;
+    margin:0 auto;
+    margin-top:-10rem;
     color:white;
     font-weight:0;
     text-align:center;
