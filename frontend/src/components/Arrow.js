@@ -12,6 +12,7 @@ const UpArrow = styled.div`
     bottom:0;
     float:right;
     margin: 0px .5rem .5rem 0px;
+    opacity:.75;
 
     a{
         color:#00A997;
