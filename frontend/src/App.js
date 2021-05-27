@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
-
+import Bio from './components/Bio';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Hero/>
       <Portfolio/>
       <Skills/>
+      <Bio/>
     </>
   );
 }
