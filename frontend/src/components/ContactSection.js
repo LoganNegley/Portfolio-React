@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
     width:95%;
     margin:0 auto;
-    margin-top:-15rem;
+    margin-top:-25rem;
 
     h3{
         color:#00A997;

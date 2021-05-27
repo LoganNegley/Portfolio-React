@@ -41,10 +41,10 @@ const MobileNav = ({setToggleMenu}) => {
         <NavLinks className='nav-links'>
             <div onClick={close} id='exit'>X</div>
             <ul>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#portfolio'>Portfolio</a></li>
-                <li><a href='#contact'>Contact</a></li>
-                <li><a href='/images/Resume.pdf' target='_blank'>Resume</a></li>
+                <li><a onClick={close} href='#about'>About</a></li>
+                <li><a onClick={close} href='#portfolio'>Portfolio</a></li>
+                <li><a onClick={close} href='#contact'>Contact</a></li>
+                <li><a onClick={close} href='/images/Resume.pdf' target='_blank'>Resume</a></li>
             </ul>
         </NavLinks>
 

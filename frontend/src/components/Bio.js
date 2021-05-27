@@ -28,12 +28,12 @@ const Section = styled.section`
     }
         .about-rectangle{
         width:13rem;
-        height:20rem;
+        height:30rem;
         opacity:.75;
         background-color:#00A997;
         position:relative;
-        left:25rem;
-        bottom:15rem;
+        left:30rem;
+        bottom:55rem;
         z-index:-1;
     }
 `;

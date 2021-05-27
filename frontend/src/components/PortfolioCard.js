@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const CardContainer = styled.div`
 
@@ -22,7 +24,7 @@ const CardContainer = styled.div`
         img{
             margin-top:1.5rem;
             width:100%;
-            height:225px;
+            height:275px;
         }
         p{
             font-size:1.5rem;
@@ -55,17 +57,34 @@ const CardContainer = styled.div`
 
 const PortfolioCard = (props) => {
     const project = props.project;
-    console.log(project)
+
+    const settings = {
+        naturalSlideWidth:100, 
+        naturalSlideHeight:100, 
+        totalSlides:project.image.length, 
+        isPlaying:true,
+        interval:2000, 
+        infinite:true,
+        visibleSlides:1
+    }
 
     return (
         <CardContainer className='card-container'>
             <div className='card-wrapper'>
                 <div className='content'>
-                    <img src={project.image[0]}/>
+                    <CarouselProvider {...settings}>
+                        <Slider>
+                            {project.image.map((item, index) =>(
+                            <Slide>
+                                <img src={project.image[index]}/>
+                            </Slide>
+                            ))}
+                        </Slider>
+                    </CarouselProvider>
                     <h4>{project.name}</h4>
                     <p>{project.description}</p>
-                    <p>{project.techStack.techDescription}</p>
-                    <p>Stack: {project.techStack.stack.map(item =>(
+                    <p style={{fontWeight:'bold'}}>{project.techStack.techDescription}</p>
+                    <p style={{fontWeight:'bold'}}>Stack: {project.techStack.stack.map(item =>(
                             `${item}, `
                     ))}
                     </p>

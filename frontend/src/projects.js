@@ -6,8 +6,8 @@ const projects = [
             '/images/dashboard.png', 
             '/images/home.png', 
             '/images/ingredients.png', 
+            '/images/menu.png',
             '/images/instructions.png', 
-            '/images/menu.png'
         ],
         site:'https://forked-recipe.vercel.app/login',
         git:'https://github.com/LoganNegley/Forked',
