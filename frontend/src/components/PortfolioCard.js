@@ -5,17 +5,24 @@ const CardContainer = styled.div`
 
     .card-wrapper{
         background-color:#03668D;
-        height:50vh;
+        ${'' /* height:50vh; */}
         margin-bottom:3rem;
         .content{
             width:90%;
             margin:0 auto;
 
+            h4{
+                color:white;
+                font-size:2rem;
+                font-weight:bold;
+                letter-spacing:.25rem;
+                margin: 1.5rem 0;
+            }
         }
         img{
             margin-top:1.5rem;
             width:100%;
-            height:200px;
+            height:225px;
         }
         p{
             font-size:1.5rem;
@@ -39,21 +46,32 @@ const CardContainer = styled.div`
             letter-spacing:.25rem;
             font-weight:bold;
 
+            a{color:white}
+
         }
         
     }
 `;
 
-const PortfolioCard = () => {
+const PortfolioCard = (props) => {
+    const project = props.project;
+    console.log(project)
+
     return (
         <CardContainer className='card-container'>
             <div className='card-wrapper'>
                 <div className='content'>
-                    <img src='/images/headshot.png'/>
-                    <p>This will be my description</p>
+                    <img src={project.image[0]}/>
+                    <h4>{project.name}</h4>
+                    <p>{project.description}</p>
+                    <p>{project.techStack.techDescription}</p>
+                    <p>Stack: {project.techStack.stack.map(item =>(
+                            `${item}, `
+                    ))}
+                    </p>
                     <div className='card-btn'>
-                        <button>Code</button>
-                        <button>Visit</button>
+                        <button><a href={project.git} target='_blank'>Code</a></button>
+                        <button><a href={project.site} target='_blank'>Visit</a></button>
                     </div>
                 </div>
             </div>

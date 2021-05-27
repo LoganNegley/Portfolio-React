@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import PortfolioCard from './PortfolioCard';
+import projects from '../projects';
 
 const PortfolioConainer = styled.section`
     width:85%;
@@ -36,12 +37,15 @@ const PortfolioConainer = styled.section`
 
 
 const Portfolio = () => {
+    const listProjects = projects;
     return (
         <PortfolioConainer>
             <div id='circle'></div>
             <h3 id='portfolio'>Portfolio</h3>
             <div id='rectangle'></div>
-            <PortfolioCard/> 
+            {listProjects.map(project =>(
+                <PortfolioCard project={project}/>
+            ))} 
         </PortfolioConainer>
     )
 }

@@ -40,6 +40,7 @@ const projects = [
         },
     },
 
+
     {
         name:"Conway's Game Of Life",
         description:"This is my take on the British mathematician John Conway's 'cellular automaton' Game Of Life.  It consists of a collection of cells which, based on a few mathematical rules, can live, die or multiply",
@@ -61,3 +62,5 @@ const projects = [
     },
 
 ]
+
+export default projects;
