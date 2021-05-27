@@ -56,7 +56,7 @@ const Hero = () => {
         <section id='hero-banner'>
             <HeroContainer>
                 <div className='top'>
-                    <HeroImage src='/images/headshot.PNG'/ alt='headshot'>
+                    <HeroImage src='/images/headshot.PNG' alt='headshot'>
                     <div className='hero-circle-one circles'></div>
                     <div className='hero-circle-two circles'></div>
                 </div>
