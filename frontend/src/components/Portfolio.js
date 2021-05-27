@@ -28,7 +28,7 @@ const PortfolioConainer = styled.section`
         height:250px;
         z-index:-1;
         position:absolute;
-        bottom:-53rem;
+        bottom:-35rem;
         left:-3rem;
 
     }
@@ -39,7 +39,7 @@ const Portfolio = () => {
     return (
         <PortfolioConainer>
             <div id='circle'></div>
-            <h3>Portfolio</h3>
+            <h3 id='portfolio'>Portfolio</h3>
             <div id='rectangle'></div>
             <PortfolioCard/> 
         </PortfolioConainer>

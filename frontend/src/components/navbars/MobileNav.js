@@ -28,6 +28,7 @@ const NavLinks = styled.div`
     li{
         padding:.5rem;
     }
+    a{color:white;}
 `;
 
 const MobileNav = ({setToggleMenu}) => {
@@ -40,10 +41,10 @@ const MobileNav = ({setToggleMenu}) => {
         <NavLinks className='nav-links'>
             <div onClick={close} id='exit'>X</div>
             <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li>Resume</li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#portfolio'>Portfolio</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <li><a href='/images/Resume.pdf' target='_blank'>Resume</a></li>
             </ul>
         </NavLinks>
 

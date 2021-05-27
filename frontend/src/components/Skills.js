@@ -3,11 +3,20 @@ import styled from 'styled-components';
 
 //styles
 const Section = styled.section`
-    background-color:#04808E;
-    width:100%;
+
+    width:90%;
+    margin:0 auto;
+
+    h3{
+        color:#00A997;
+        font-size:3rem;
+        letter-spacing:.5rem
+        
+    }
 
     .skills-icon-wrapper{
-        width:85%;
+        background-color:#04808E;
+        width:100%;
         margin:0 auto;
         display:flex;
         flex-flow:row wrap;
@@ -39,18 +48,16 @@ const Section = styled.section`
 const Skills = () => {
     return (
         <Section className='skills-container'>
+            <h3 id='about'>About Me</h3>
             <div className='skills-icon-wrapper'>
                 <i className="fab fa-css3-alt"></i>
-                                                <div id='adobe-xd-icon' className='icon'>Xd</div>
+                <div id='adobe-xd-icon' className='icon'>Xd</div>
                 <i className="fab fa-js"></i>
-
                 <i className="fab fa-react"></i>
                 <i className="fab fa-github"></i>
-                                <div id='adobe-ill-icon' className='icon'>Ai</div>
+                <div id='adobe-ill-icon' className='icon'>Ai</div>
                 <i className="fab fa-node"></i>
                 <i className="fab fa-html5"></i>
-
-
             </div>
         </Section>
     )

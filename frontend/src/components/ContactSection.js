@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
     width:95%;
     margin:0 auto;
-    margin-top:-25rem;
+    margin-top:-15rem;
 
     h3{
         color:#00A997;
@@ -43,7 +43,7 @@ const Section = styled.section`
 const ContactSection = () => {
     return (
         <Section id='contact'>
-            <h3>Contact Me</h3>
+            <h3 id='contact'>Contact Me</h3>
             <div className='contact-container'>
                 <h3>Let's get in touch</h3>
                 <p className='first'>I look forward to hearing from you!</p>

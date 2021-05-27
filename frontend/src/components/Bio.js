@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Section = styled.section`
     width:90%;
     margin:0 auto;
-    margin-top:-10rem;
+    margin-top:-12rem;
     color:white;
     font-weight:0;
     text-align:center;
@@ -28,12 +28,12 @@ const Section = styled.section`
     }
         .about-rectangle{
         width:13rem;
-        height:30rem;
+        height:20rem;
         opacity:.75;
         background-color:#00A997;
         position:relative;
         left:25rem;
-        bottom:10rem;
+        bottom:15rem;
         z-index:-1;
     }
 `;
@@ -41,6 +41,7 @@ const Section = styled.section`
 const Bio = () => {
     return (
         <Section>
+
             <div className='about-circle'></div>
             <p className='heading'>Who am I?</p>
             <p>2+ years ago, I fell in love with code and started teaching myself through youtube, books, and pretty much anyway I could think of. Then I decided to invest in myself and enrolled in Lambda School. Fast forward 14 months...</p>
@@ -52,6 +53,7 @@ const Bio = () => {
             I can be somewhat of a clean freak sometimes!
             </p>
             <div className='about-rectangle'></div>
+
         </Section>
     )
 }
