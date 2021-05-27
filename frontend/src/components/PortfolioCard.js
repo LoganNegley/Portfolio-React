@@ -57,16 +57,6 @@ const PortfolioCard = () => {
                     </div>
                 </div>
             </div>
-            <div className='card-wrapper'>
-                <div className='content'>
-                    <img src='/images/headshot.png'/>
-                    <p>This will be my description</p>
-                    <div className='card-btn'>
-                        <button>Code</button>
-                        <button>Visit</button>
-                    </div>
-                </div>
-            </div>
         </CardContainer>
     )
 }
