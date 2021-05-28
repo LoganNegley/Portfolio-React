@@ -10,8 +10,8 @@ const Section = styled.section`
     h3{
         color:#00A997;
         font-size:3rem;
-        letter-spacing:.5rem
-        
+        letter-spacing:.5rem;
+        margin-bottom:3rem;
     }
 
     .skills-icon-wrapper{

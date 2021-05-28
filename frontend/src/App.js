@@ -9,8 +9,12 @@ import ContactSection from './components/ContactSection';
 import Arrow from './components/Arrow';
 
 function App() {
+  const Container = styled.div`
+
+  `;
+
   return (
-    <>
+    <Container className='App'>
       <Header/>
       <Hero/>
       <Portfolio/>
@@ -18,7 +22,7 @@ function App() {
       <Bio/>
       <ContactSection/>
       <Arrow/>
-    </>
+    </Container>
   );
 }
 

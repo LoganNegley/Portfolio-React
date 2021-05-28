@@ -7,7 +7,6 @@ const CardContainer = styled.div`
 
     .card-wrapper{
         background-color:#03668D;
-        ${'' /* height:50vh; */}
         margin-bottom:3rem;
         .content{
             width:90%;
@@ -29,6 +28,7 @@ const CardContainer = styled.div`
         p{
             font-size:1.5rem;
             color:white;
+            margin:1.75rem 0;
         }
         .card-btn{
             display:flex;

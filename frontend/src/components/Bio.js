@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Section = styled.section`
     width:90%;
     margin:0 auto;
-    margin-top:-12rem;
+    margin-top:7rem;
     color:white;
     font-weight:0;
     text-align:center;
@@ -42,7 +42,7 @@ const Bio = () => {
     return (
         <Section>
 
-            <div className='about-circle'></div>
+            {/* <div className='about-circle'></div> */}
             <p className='heading'>Who am I?</p>
             <p>2+ years ago, I fell in love with code and started teaching myself through youtube, books, and pretty much anyway I could think of. Then I decided to invest in myself and enrolled in Lambda School. Fast forward 14 months...</p>
             <p className='heading'>Where am I now?</p>
@@ -52,7 +52,7 @@ const Bio = () => {
             I like to travel and see new things.<br/>
             I can be somewhat of a clean freak sometimes!
             </p>
-            <div className='about-rectangle'></div>
+            {/* <div className='about-rectangle'></div> */}
 
         </Section>
     )
