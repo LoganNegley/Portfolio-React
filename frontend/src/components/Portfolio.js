@@ -5,7 +5,7 @@ import projects from '../projects';
 
 const PortfolioConainer = styled.section`
     width:85%;
-    margin:6rem auto;
+    margin:0 auto;
 
     h3{
         color:#00A997;

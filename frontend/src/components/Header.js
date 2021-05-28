@@ -8,6 +8,7 @@ const Nav = styled.nav`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    width:100%;
 `;
 const Logo = styled.div`
     width:5rem;
@@ -23,6 +24,10 @@ const Logo = styled.div`
 const Icon = styled.i`
     color:#00A997;
     font-size:3.5rem;
+    
+    ${'' /* @media screen and (min-width: 480px){
+        margin-right:2rem;
+    } */}
 `;
 
 
