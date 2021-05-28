@@ -13,6 +13,7 @@ const NavLinks = styled.div`
     border-radius:75px 0 75px 0;
     z-index:110;
 
+
     #exit{
         position:absolute;
         right:10px;

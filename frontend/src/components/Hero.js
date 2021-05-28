@@ -6,45 +6,30 @@ import styled from 'styled-components';
 const HeroContainer= styled.section`
     width:100%;
     margin:0 auto;
-    .circles{
-        width:100px;
-        height:100px;
-        margin-top:3rem;
-        border-radius:50%;
-    }
+
+        @media(min-width: 900px){
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            margin-bottom:7rem;
+        }
+            @media(min-width: 1024px){
+                justify-content:space-between;
+            }
+
     .top{
         width:85%;
         margin:0 auto;
         text-align:center;
-        ${'' /* position:relative; */}
-        
-        ${'' /* @media screen and (min-width: 525px){
-            
-        } */}
 
-        .hero-circle-one{
-            background-color:#00A997;
-            position:absolute;
-            top:0rem;
-            right:-2rem;
-            z-index:-1;
+            @media(min-width: 900px){
+                width:50%;
+                margin-top:4rem;
+            }
+            @media(min-width: 1024px){
+                width:30%;
 
-            @media screen and (min-width: 435px){
-                right:3rem;
             }
-        }
-        .hero-circle-two{
-            background-color:#03668D;
-            position:absolute;
-            top:9rem;
-            right:-2rem;
-            z-index:-1;
-            border:1rem solid #173154;
-            
-            @media screen and (min-width: 435px){
-                right:3rem;
-            }
-        }
     }
 
     .bottom{
@@ -55,16 +40,30 @@ const HeroContainer= styled.section`
         font-size:3rem;
         color:white;
         line-height:4rem;
-        span{
-             font-weight:bold;
-        }
+            span{
+                 font-weight:bold;
+            }
+
+            @media(min-width: 900px){
+                width:50%;
+            }
+            @media(min-width: 1024px){
+                width:40%;
+            }
     }
 `;
+
 const HeroImage = styled.img`
     width:25rem;
     height:250px;
     border-radius:50%;
-    border:1rem solid #173154;
+
+
+        @media(min-width: 900px){
+            width:35rem;
+            height:350px;
+            border-radius:50%;
+        }
 `;
 
 const Hero = () => {
@@ -72,8 +71,6 @@ const Hero = () => {
         <HeroContainer id='hero-banner'>
                 <div className='top'>
                     <HeroImage src='/images/headshot.PNG' alt='headshot'/>
-                    {/* <div className='hero-circle-one circles'></div>
-                    <div className='hero-circle-two circles'></div> */}
                 </div>
                 <div className='bottom'>
                     <p>Hello there, my name is <span className='name' style={{color:'#00A997'}}>Logan Negley</span>. I am a <span className='title' style= {{textDecoration:'underline'}}>{"<Full Stack Web Developer>"}</span></p>

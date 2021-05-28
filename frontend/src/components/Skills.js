@@ -12,6 +12,10 @@ const Section = styled.section`
         font-size:3rem;
         letter-spacing:.5rem;
         margin-bottom:3rem;
+
+            @media(min-width: 900px){
+                font-size:3.75rem;
+            }
     }
 
     .skills-icon-wrapper{

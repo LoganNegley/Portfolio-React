@@ -11,6 +11,10 @@ const Section = styled.section`
         color:#00A997;
         font-size:3rem;
         letter-spacing:.5rem;
+
+            @media(min-width: 900px){
+                font-size:3.75rem;
+            }
     }
     .contact-container{
         background-color:#03668D;
@@ -23,6 +27,9 @@ const Section = styled.section`
             font-size:3rem;
             color:white;
             margin-top:2rem;
+                @media(min-width: 900px){
+                    font-size:3rem;
+                }
         }
         .first{
             font-size:2rem;
@@ -32,11 +39,18 @@ const Section = styled.section`
             font-size:1.5rem;
             color:white;
             margin:1.25rem 0; 
+                @media(min-width: 900px){
+                    font-size:2.5rem;
+                }
         }
         i{
             font-size:3rem;
             color:black;
             margin-left:1.5rem;
+
+            @media(min-width: 900px){
+                font-size:5rem;
+            }
 
         }
     }

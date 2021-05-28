@@ -3,13 +3,17 @@ import styled from 'styled-components';
 
 const Nav = styled.nav`
     display:none;
+
+        @media(min-width: 768px){
+            display:block;
+        }
     ul{
         display:flex;
         flex-flow:row no-wrap;
         padding-left:0px;
         li{
             margin: 0px .75rem;
-            font-size:1.30rem;
+            font-size:2rem;
         a{
             color:white;
         }

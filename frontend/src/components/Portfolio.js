@@ -3,51 +3,50 @@ import styled from 'styled-components';
 import PortfolioCard from './PortfolioCard';
 import projects from '../projects';
 
-const PortfolioConainer = styled.section`
-    width:85%;
-    margin:0 auto;
-
+const PortgolioContainer= styled.div`
+        @media(min-width: 1200px){
+            width:90%;
+            margin:0 auto;
+        }
     h3{
         color:#00A997;
         font-size:3rem;
         letter-spacing:.5rem;
         margin-bottom:3rem;
-    }
 
-    #circle{
-        background-color:#04808E;
-        width:150px;
-        height:150px;
-        border-radius:50%;
-        position:absolute;
-        z-index:-1;
-        right:-4rem;
-        top:62rem;
-    }
-    #rectangle{
-        background-color:#00A997;
-        width:100px;
-        height:250px;
-        z-index:-1;
-        position:absolute;
-        bottom:-35rem;
-        left:-3rem;
+            @media(min-width: 900px){
+                font-size:3.75rem;
+            }
+
 
     }
+`;
+
+const PortfolioWrapper = styled.section`
+    width:85%;
+    margin:0 auto;
+        @media(min-width: 768px){
+            display:flex;
+            flex-flow:wrap row;
+            justify-content:space-evenly;
+        }
+
+
 `;
 
 
 const Portfolio = () => {
     const listProjects = projects;
+
     return (
-        <PortfolioConainer>
-            {/* <div id='circle'></div> */}
-            <h3 id='portfolio'>Portfolio</h3>
-            {/* <div id='rectangle'></div> */}
+        <PortgolioContainer>
+        <h3 id='portfolio'>Portfolio</h3>
+        <PortfolioWrapper>
             {listProjects.map(project =>(
                 <PortfolioCard project={project}/>
             ))} 
-        </PortfolioConainer>
+        </PortfolioWrapper>
+        </PortgolioContainer>
     )
 }
 
