@@ -15,6 +15,7 @@ const HeroContainer= styled.section`
     .top{
         width:85%;
         margin:0 auto;
+        text-align:center;
         ${'' /* position:relative; */}
         
         ${'' /* @media screen and (min-width: 525px){
@@ -47,9 +48,10 @@ const HeroContainer= styled.section`
     }
 
     .bottom{
-        width:95%;
+        width:90%;
         text-align:center;
         margin:0 auto;
+        margin-bottom:6rem;
         font-size:3rem;
         color:white;
         line-height:4rem;

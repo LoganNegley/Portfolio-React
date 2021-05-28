@@ -11,6 +11,7 @@ const PortfolioConainer = styled.section`
         color:#00A997;
         font-size:3rem;
         letter-spacing:.5rem;
+        margin-bottom:3rem;
     }
 
     #circle{
@@ -40,9 +41,9 @@ const Portfolio = () => {
     const listProjects = projects;
     return (
         <PortfolioConainer>
-            <div id='circle'></div>
+            {/* <div id='circle'></div> */}
             <h3 id='portfolio'>Portfolio</h3>
-            <div id='rectangle'></div>
+            {/* <div id='rectangle'></div> */}
             {listProjects.map(project =>(
                 <PortfolioCard project={project}/>
             ))} 

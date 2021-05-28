@@ -10,8 +10,7 @@ import Arrow from './components/Arrow';
 
 function App() {
   const Container = styled.div`
-    width:90%;
-    ${'' /* margin:0 auto; */}
+
   `;
 
   return (

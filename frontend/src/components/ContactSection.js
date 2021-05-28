@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const Section = styled.section`
     width:95%;
     margin:0 auto;
-    margin-top:-25rem;
+    ${'' /* margin-top:-25rem; */}
+    margin-top:6rem;
 
     h3{
         color:#00A997;
@@ -15,9 +16,8 @@ const Section = styled.section`
         background-color:#03668D;
         width:100%;
         margin:0 auto;
-        margin-bottom:3rem;
+        margin-bottom:2rem;
         text-align:center;
-
 
         h3{
             font-size:3rem;
@@ -31,6 +31,7 @@ const Section = styled.section`
         p{
             font-size:1.5rem;
             color:white;
+            margin:1.25rem 0; 
         }
         i{
             font-size:3rem;
