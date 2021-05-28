@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import MobileNav from './navbars/MobileNav';
+import MainNav from './navbars/MainNav';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -34,8 +35,10 @@ const Header = () => {
 
     return (
         <header>
+
             <Nav>
                 <Logo id='circle-logo'><a style={{color:'white'}} href='#top'>LN</a></Logo>
+                    <MainNav/>
                 <Icon onClick={toggle} className="fas fa-bars"></Icon>
             </Nav>
             {toggleMenu && <MobileNav setToggleMenu={setToggleMenu}/>}
