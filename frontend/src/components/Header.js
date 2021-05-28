@@ -4,12 +4,20 @@ import MainNav from './navbars/MainNav';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-    ${'' /* margin:1rem 1rem; */}
     display:flex;
     justify-content:space-between;
     align-items:center;
     width:100%;
-    ${'' /* width:100%; */}
+
+    @media(min-width:480px){
+        padding-bottom:1rem;
+        border-bottom:solid 1px #00A997;
+    }
+
+    @media(min-width:1200px){
+        width:95%;
+        margin:0 auto;
+    }
 `;
 const Logo = styled.div`
     width:5rem;
@@ -25,10 +33,11 @@ const Logo = styled.div`
 const Icon = styled.i`
     color:#00A997;
     font-size:3.5rem;
-    
-    ${'' /* @media screen and (min-width: 480px){
-        margin-right:2rem;
-    } */}
+
+        @media(min-width: 768px){
+            display:none;
+        }
+
 `;
 
 
